@@ -1,6 +1,6 @@
 <template>
   <div class="section">
-    <h3 class="title">My orders</h3>
+    <h3 class="title">Orders</h3>
     <div v-if="orders.length > 0">
       <div v-for="order in orders" :key="order._id">
         <h3 class="subtitle">Order id: {{ order._id }}</h3>

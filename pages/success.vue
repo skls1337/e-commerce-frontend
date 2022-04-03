@@ -6,7 +6,7 @@
          Success
         </h1>
         <h2 class="subtitle">
-          Comanda ta a fost inregistrata. Vei primi factura pe mail
+          Your order has been registered. You will receive an email with the invoice of your order.
         </h2>
       </div>
     </div>
