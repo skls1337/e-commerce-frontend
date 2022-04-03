@@ -5,8 +5,8 @@
   "author": "Andy Grecu",
   "scripts": {
     "dev": "nuxt",
-    "build": "npm run generate",
-    "start": "nuxt start"
+    "start": "nuxt",
+    "build": "nuxt generate"
   },
   "repository": {
     "type": "git",
