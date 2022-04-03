@@ -148,8 +148,8 @@ export default {
           });
         });
         this.stripe.redirectToCheckout({
-          successUrl: "http://localhost:3000/vericu/success",
-          cancelUrl: "http://localhost:3000/vericu",
+          successUrl: process.env.PROD_URL + "/success",
+          cancelUrl: process.env.PROD_URL,
           lineItems: productsLineItems,
           mode: "payment"
         });
