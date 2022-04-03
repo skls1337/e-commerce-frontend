@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: this.$config.API_PROD_URL
+  baseURL: process.env.API_PROD_URL
 });
 
 instance.interceptors.request.use(

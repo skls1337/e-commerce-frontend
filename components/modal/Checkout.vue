@@ -134,6 +134,7 @@ export default {
       this.$store.commit("setAddedBtn", data);
     },
     onNextBtn() {
+      console.log(process.env.API_PROD_URL);
       if (this.isUserLoggedIn) {
         const productsAdded = this.$store.getters.productsAdded;
         const productsLineItems = [];
@@ -148,8 +149,8 @@ export default {
           });
         });
         this.stripe.redirectToCheckout({
-          successUrl: this.$config.PROD_URL + "/success",
-          cancelUrl: this.$config.PROD_URL,
+          successUrl: process.env.PROD_URL + "/success",
+          cancelUrl: process.env.PROD_URL,
           lineItems: productsLineItems,
           mode: "payment"
         });
