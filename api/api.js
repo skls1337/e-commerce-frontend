@@ -1,20 +1,18 @@
 import axios from "axios";
 
-let url = process.env.API_PROD_URL;
-
 const instance = axios.create({
-  baseURL: url,
+  baseURL: process.env.API_PROD_URL
 });
 
 instance.interceptors.request.use(
-  async (config) => {
+  async config => {
     const token = window.localStorage.getItem("token");
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
     return config;
   },
-  (err) => {
+  err => {
     return Promise.reject(err);
   }
 );
