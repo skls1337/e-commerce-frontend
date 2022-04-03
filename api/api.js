@@ -4,6 +4,8 @@ const instance = axios.create({
   baseURL: process.env.API_PROD_URL
 });
 
+console.log(process.env.API_PROD_URL);
+
 instance.interceptors.request.use(
   async config => {
     const token = window.localStorage.getItem("token");

@@ -34,7 +34,7 @@
           </div>
         </div>
         <div v-if="isCheckoutSection">
-          <p>You bought it :-)</p>
+          <p>You will be redirect to checkout page</p>
         </div>
       </section>
       <footer class="modal-card-foot">
