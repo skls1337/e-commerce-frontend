@@ -8,6 +8,11 @@ module.exports = {
   router: {
     base: "/vericu/"
   },
+  publicRuntimeConfig: {
+    STRIPE_API_KEY: process.env.STRIPE_API_KEY,
+    API_PROD_URL: process.env.API_PROD_URL,
+    PROD_URL: process.env.PROD_URL
+  },
 
   /*
    ** Headers of the page
