@@ -149,8 +149,8 @@ export default {
           });
         });
         this.stripe.redirectToCheckout({
-          successUrl: "https://vericu-car-parts-shop.herokuapp.com/success",
-          cancelUrl: "https://vericu-car-parts-shop.herokuapp.com/",
+          successUrl: "https://velvety-puppy-9a9a95.netlify.app/success",
+          cancelUrl: "https://velvety-puppy-9a9a95.netlify.app/",
           lineItems: productsLineItems,
           mode: "payment"
         });
