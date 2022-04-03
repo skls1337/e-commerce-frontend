@@ -1,29 +1,25 @@
-# e-commerce-frontend
+# Vuemmerce - Ecommerce Template
 
-This template should help get you started developing with Vue 3 in Vite.
+## Responsive ecommerce template built with Vue.js and Nuxt.js
 
-## Recommended IDE Setup
+## Installing
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
 ```
+# clone repository
+git clone https://github.com/ivanlori/Vuemmerce.git
 
-### Compile and Hot-Reload for Development
+# install dependencies
+yarn install
 
-```sh
-npm run dev
-```
+# serve with hot reload at localhost:3000
+yarn dev
 
-### Compile and Minify for Production
+# generate static pages via nuxt.js for static hosting
+yarn build
 
-```sh
-npm run build
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 ```
