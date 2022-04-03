@@ -1,7 +1,3 @@
-# Vuemmerce - Ecommerce Template
-
-## Responsive ecommerce template built with Vue.js and Nuxt.js
-
 ## Installing
 
 ```
