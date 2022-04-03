@@ -73,7 +73,7 @@ export default {
     };
   },
   async mounted() {
-    this.stripe = await loadStripe("pk_test_51KgU5vDYWQXfM6IOywACLjOW7BKCxB5bMEH9zPLt7ptCAoyeG6NwvdRIw2wQtRQgxQQydAWYbPXQt15ndVFEDIfd00iTBlwCTl");
+    this.stripe = await loadStripe("" + process.env.STRIPE_API_KEY);
   },
   computed: {
     products() {
@@ -149,8 +149,8 @@ export default {
           });
         });
         this.stripe.redirectToCheckout({
-          successUrl: "https://vericu-car-parts-shop.herokuapp.com/success",
-          cancelUrl: "https://vericu-car-parts-shop.herokuapp.com/",
+          successUrl: process.env.PROD_URL + "/success",
+          cancelUrl: process.env.PROD_URL,
           lineItems: productsLineItems,
           mode: "payment"
         });
