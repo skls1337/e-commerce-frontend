@@ -6,7 +6,7 @@ module.exports = {
   env: env.parsed,
 
   router: {
-    base: "/vericu/"
+    base: "/"
   },
   /*
    ** Headers of the page
