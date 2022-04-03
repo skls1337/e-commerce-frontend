@@ -6,7 +6,7 @@
 
 ```
 # clone repository
-git clone https://github.com/ivanlori/Vuemmerce.git
+git clone https://github.com/skls1337/e-commerce-frontend.git
 
 # install dependencies
 yarn install
@@ -19,7 +19,3 @@ yarn build
 
 ---
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-```
