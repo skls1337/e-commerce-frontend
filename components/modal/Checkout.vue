@@ -73,7 +73,7 @@ export default {
     };
   },
   async mounted() {
-    this.stripe = await loadStripe("" + this.$config.STRIPE_API_KEY);
+    this.stripe = await loadStripe("" + process.env.STRIPE_API_KEY);
   },
   computed: {
     products() {

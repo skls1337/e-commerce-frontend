@@ -3,16 +3,11 @@ const env = require("dotenv").config();
 
 module.exports = {
   target: "static",
+  env: env.parsed,
 
   router: {
     base: "/vericu/"
   },
-  env: {
-    STRIPE_API_KEY: process.env.STRIPE_API_KEY,
-    API_PROD_URL: process.env.API_PROD_URL,
-    PROD_URL: process.env.PROD_URL
-  },
-
   /*
    ** Headers of the page
    */
