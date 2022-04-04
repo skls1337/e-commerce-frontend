@@ -15,7 +15,7 @@
         <p>{{ prod.description }}</p>
         <p class="is-pulled-right">
           <span class="title is-4"
-            ><strong> RON; {{ prod.price }}</strong></span
+            ><strong>{{ prod.price }} RON</strong></span
           >
         </p>
           <p>Amount bought: {{ product.quantity }}</p>
