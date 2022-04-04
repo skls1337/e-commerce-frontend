@@ -24,7 +24,7 @@
               {{
                 product.selectedQuantity > 0
                   ? ` - Quantity: ${product.selectedQuantity}`
-                  : "1"
+                  : " - Quantity: 1"
               }}
             </p>
             <p>{{ product.price }} RON</p>
