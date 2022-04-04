@@ -321,6 +321,7 @@ export default {
       };
       this.$store.dispatch("editProduct", data);
       this.$router.push({ name: "index" });
+      this.$store.scommit("FINISH_EDIT");
     }
   }
 };
