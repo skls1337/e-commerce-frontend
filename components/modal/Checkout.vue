@@ -24,10 +24,10 @@
               {{
                 product.selectedQuantity > 0
                   ? ` - Quantity: ${product.selectedQuantity}`
-                  : ""
+                  : "1"
               }}
             </p>
-            <p>{{ product.price }} &euro;</p>
+            <p>{{ product.price }} RON</p>
           </div>
           <div v-if="products.length === 0">
             <p>{{ cartEmptyLabel }}</p>
