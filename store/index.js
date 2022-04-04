@@ -495,6 +495,7 @@ export const actions = {
       })
       .then(response => {
         commit("showEditProductModal", false, {});
+        commit("FINISH_EDIT");
       });
   },
   editProfile({ commit }, data) {
