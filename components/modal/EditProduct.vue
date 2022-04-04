@@ -320,6 +320,7 @@ export default {
         loading: false
       };
       this.$store.dispatch("editProduct", data);
+      this.$router.push({ name: "index" });
     }
   }
 };
